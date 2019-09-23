@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1002-CTRL-6-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1002-CTRL-6-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1002-CTRL-6-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1002-CTRL-24-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1002-CTRL-24-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1002-CTRL-24-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1002-CTRL-72-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1002-CTRL-72-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1002-CTRL-72-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1002-CIT-6-RNA-1-1	RPTEC/TERT1	1	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-6-RNA	66	micromolar	6	hour	DMSO
+UCD-1002-CIT-6-RNA-2-1	RPTEC/TERT1	2	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-6-RNA	66	micromolar	6	hour	DMSO
+UCD-1002-CIT-6-RNA-3-1	RPTEC/TERT1	3	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-6-RNA	66	micromolar	6	hour	DMSO
+UCD-1002-CIT-24-RNA-1-1	RPTEC/TERT1	1	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-24-RNA	66	micromolar	24	hour	DMSO
+UCD-1002-CIT-24-RNA-2-1	RPTEC/TERT1	2	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-24-RNA	66	micromolar	24	hour	DMSO
+UCD-1002-CIT-24-RNA-3-1	RPTEC/TERT1	3	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-24-RNA	66	micromolar	24	hour	DMSO
+UCD-1002-CIT-72-RNA-1-1	RPTEC/TERT1	1	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-72-RNA	66	micromolar	72	hour	DMSO
+UCD-1002-CIT-72-RNA-2-1	RPTEC/TERT1	2	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-72-RNA	66	micromolar	72	hour	DMSO
+UCD-1002-CIT-72-RNA-3-1	RPTEC/TERT1	3	citrinin	Non-genotoxic	FALSE	UCD-1002-CTRL-72-RNA	66	micromolar	72	hour	DMSO

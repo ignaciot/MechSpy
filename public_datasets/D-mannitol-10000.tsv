@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+HUL-H-MED-24-R-1-2	HepG2	1	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-24-R-2-2	HepG2	2	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-24-R-3-2	HepG2	3	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-72-R-1-2	HepG2	1	untreated	CTRL	TRUE				72	hour
+HUL-H-MED-72-R-2-2	HepG2	2	untreated	CTRL	TRUE				72	hour
+HUL-H-MED-72-R-3-2	HepG2	3	untreated	CTRL	TRUE				72	hour
+HUL-H-DMT1-24-R-1-2	HepG2	1	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-24-R	10000	micromolar	24	hour
+HUL-H-DMT1-24-R-2-2	HepG2	2	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-24-R	10000	micromolar	24	hour
+HUL-H-DMT1-24-R-3-2	HepG2	3	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-24-R	10000	micromolar	24	hour
+HUL-H-DMT1-72-R-1-2	HepG2	1	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-72-R	10000	micromolar	72	hour
+HUL-H-DMT1-72-R-2-2	HepG2	2	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-72-R	10000	micromolar	72	hour
+HUL-H-DMT1-72-R-3-2	HepG2	3	D-mannitol	Non-carcinogen	FALSE	HUL-H-MED-72-R	10000	micromolar	72	hour

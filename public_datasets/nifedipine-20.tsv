@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI-T2-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T3-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T4-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T2-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T3-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T4-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T2-NFE5-24h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T2-DMSO-24h	20	micromolar	24	hour
+BPI-T3-NFE5-24h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T3-DMSO-24h	20	micromolar	24	hour
+BPI-T4-NFE5-24h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T4-DMSO-24h-R-1-1	20	micromolar	24	hour
+BPI-T2-NFE5-72h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T2-DMSO-72h	20	micromolar	72	hour
+BPI-T3-NFE5-72h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T3-DMSO-72h	20	micromolar	72	hour
+BPI-T4-NFE5-72h-R-1-1	HepaRG	1	nifedipine	Non-carcinogen	FALSE	BPI-T4-DMSO-72h-R-1-1	20	micromolar	72	hour

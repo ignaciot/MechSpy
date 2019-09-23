@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+IMU10-1-6-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour	DMSO
+IMU10-1-6-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour	DMSO
+IMU10-1-6-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour	DMSO
+IMU10-1-24-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour	DMSO
+IMU10-1-24-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour	DMSO
+IMU10-1-24-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour	DMSO
+IMU10-1-72-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour	DMSO
+IMU10-1-72-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour	DMSO
+IMU10-1-72-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour	DMSO
+IMU10-7-6-R-1-1	RPTEC/TERT1	1	clonidine	Non-carcinogen	FALSE	IMU10-1-6-R	2500	micromolar	6	hour	DMSO
+IMU10-7-6-R-2-1	RPTEC/TERT1	2	clonidine	Non-carcinogen	FALSE	IMU10-1-6-R	2500	micromolar	6	hour	DMSO
+IMU10-7-6-R-3-1	RPTEC/TERT1	3	clonidine	Non-carcinogen	FALSE	IMU10-1-6-R	2500	micromolar	6	hour	DMSO
+IMU10-7-24-R-1-1	RPTEC/TERT1	1	clonidine	Non-carcinogen	FALSE	IMU10-1-24-R	2500	micromolar	24	hour	DMSO
+IMU10-7-24-R-2-1	RPTEC/TERT1	2	clonidine	Non-carcinogen	FALSE	IMU10-1-24-R	2500	micromolar	24	hour	DMSO
+IMU10-7-24-R-3-1	RPTEC/TERT1	3	clonidine	Non-carcinogen	FALSE	IMU10-1-24-R	2500	micromolar	24	hour	DMSO
+IMU10-7-72-R-1-1	RPTEC/TERT1	1	clonidine	Non-carcinogen	FALSE		2500	micromolar	72	hour	DMSO
+IMU10-7-72-R-2-1	RPTEC/TERT1	3	clonidine	Non-carcinogen	FALSE	IMU10-1-72	2500	micromolar	72	hour	DMSO
+IMU10-7-72-R-3-1	RPTEC/TERT1	2	clonidine	Non-carcinogen	FALSE	IMU10-1-72	2500	micromolar	72	hour	DMSO

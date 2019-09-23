@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI-T1-DMSO-24h-R-2-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T2-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T3-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T1-DMSO-72h-R-2-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T2-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T3-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T1-CPM 10-24h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T1-DMSO-24h	700	micromolar	24	hour
+BPI-T2-CPM 10-24h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T2-DMSO-24h	700	micromolar	24	hour
+BPI-T3-CPM 10-24h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T3-DMSO-24h	700	micromolar	24	hour
+BPI-T1-CPM 10-72h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T1-DMSO-72h	700	micromolar	72	hour
+BPI-T2-CPM 10-72h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T2-DMSO-72h	700	micromolar	72	hour
+BPI-T3-CPM 10-72h-R-1-1	HepaRG	1	cyclophosphamide hydrate	Genotoxic	FALSE	BPI-T3-DMSO-72h	700	micromolar	72	hour

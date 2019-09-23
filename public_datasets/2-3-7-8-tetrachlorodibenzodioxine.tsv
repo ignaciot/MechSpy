@@ -1,0 +1,8 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose Duration	Dose Duration Unit	Dose	Dose Unit	Vehicle	Mechanisms
+LUM-4-BR200.DMSO-24h-R-1-1	BR200	1	dimethyl sulfoxide	DMSO	TRUE		24	hour	0.005	percent	DMSO	
+LUM-4-BR200.DMSO-72h-R-1-1	BR200	1	dimethyl sulfoxide	DMSO	TRUE		72	hour	0.005	percent	DMSO	
+LUM-4-BR200.TCD 0.025-24h-R-1-1	BR200	1	2,3,7,8-tetrachlorodibenzodioxine	Non-genotoxic	FALSE	LUM-4-BR200.DMSO-24h-R-1-1	24	hour	0.025	micromolar	DMSO	M6, M4
+LUM-4-BR200.TCD 0.025-72h-R-1-1	BR200	1	2,3,7,8-tetrachlorodibenzodioxine	Non-genotoxic	FALSE	LUM-4-BR200.DMSO-72h-R-1-1	72	hour	0.025	micromolar	DMSO	M6, M4
+LUM-4-BR200.TCD 0.05-24h-R-1-1	BR200	1	2,3,7,8-tetrachlorodibenzodioxine	Non-genotoxic	FALSE	LUM-4-BR200.DMSO-24h-R-1-1	24	hour	0.05	micromolar	DMSO	M6, M4
+LUM-4-BR200.TCD 0.05-72h-R-1-1	BR200	1	2,3,7,8-tetrachlorodibenzodioxine	Non-genotoxic	FALSE	LUM-4-BR200.DMSO-72h-R-1-1	72	hour	0.05	micromolar	DMSO	M6, M4
+

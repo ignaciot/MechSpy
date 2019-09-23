@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+VUB-1007-DP-24-R-1-1H	HepaRG	1	DMSO/PBS	DMSO	TRUE		0.5	percent	24	hour
+VUB-1008-DP-24-R-2-1D	HepaRG	2	DMSO/PBS	DMSO	TRUE		0.5	percent	24	hour
+VUB-1009-DP-24-R-3-1D	HepaRG	3	DMSO/PBS	DMSO	TRUE		0.5	percent	24	hour
+VUB-1007-DP-72-R-1-1N	HepaRG	1	DMSO/PBS	DMSO	TRUE		0.5	percent	72	hour
+VUB-1008-DP-72-R-2-1I	HepaRG	2	DMSO/PBS	DMSO	TRUE		0.5	percent	72	hour
+VUB-1009-DP-72-R-3-1J	HepaRG	3	DMSO/PBS	DMSO	TRUE		0.5	percent	72	hour
+VUB-1007-HHC-24-R-1-1	HepaRG	1	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1007-DP-24-R	0.85	millimolar	24	hour
+VUB-1008-HHC-24-R-2-1	HepaRG	2	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1008-DP-24-R	0.85	millimolar	24	hour
+VUB-1009-HHC-24-R-3-1	HepaRG	3	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1009-DP-24-R	0.85	millimolar	24	hour
+VUB-1007-HHC-72-R-1-1	HepaRG	1	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1007-DP-72	0.85	millimolar	72	hour
+VUB-1008-HHC-72-R-2-2	HepaRG	2	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1008-DP-72-R	0.85	millimolar	72	hour
+VUB-1009-HHC-72-R-3-1	HepaRG	3	Hydrazine dihydrochloride 	Genotoxic	FALSE	VUB-1009-DP-72-R	0.85	millimolar	72	hour

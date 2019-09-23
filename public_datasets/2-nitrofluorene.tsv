@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-3-1-6-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	FALSE				6	hour
+UCD-3-1-6-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	FALSE				6	hour
+UCD-3-1-6-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	FALSE				6	hour
+UCD-3-1-24-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	FALSE				24	hour
+UCD-3-1-24-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	FALSE				24	hour
+UCD-3-1-24-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	FALSE				24	hour
+UCD-3-1-72-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	FALSE				72	hour
+UCD-3-1-72-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	FALSE				72	hour
+UCD-3-1-72-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	FALSE				72	hour
+UCD-3-2-6-R-1-x	RPTEC/TERT1	1	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-6-R	60	micromolar	6	hour	DMSO
+UCD-3-2-6-R-2-x	RPTEC/TERT1	2	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-6-R	60	micromolar	6	hour	DMSO
+UCD-3-2-6-R-3-x	RPTEC/TERT1	3	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-6-R	60	micromolar	6	hour	DMSO
+UCD-3-2-24-R-1-x	RPTEC/TERT1	1	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-24-R	60	micromolar	24	hour	DMSO
+UCD-3-2-24-R-2-x	RPTEC/TERT1	2	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-24-R	60	micromolar	24	hour	DMSO
+UCD-3-2-24-R-3-x	RPTEC/TERT1	3	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-24-R	60	micromolar	24	hour	DMSO
+UCD-3-2-72-R-1-x	RPTEC/TERT1	1	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-72-R	60	micromolar	72	hour	DMSO
+UCD-3-2-72-R-2-x	RPTEC/TERT1	2	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-72-R	60	micromolar	72	hour	DMSO
+UCD-3-2-72-R-3-x	RPTEC/TERT1	3	2-nitrofluorene	Genotoxic	FALSE	UCD-3-1-72-R	60	micromolar	72	hour	DMSO

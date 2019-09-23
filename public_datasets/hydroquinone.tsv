@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1004-CTRL-6-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-6-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-6-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-24-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-24-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-24-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-72-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-CTRL-72-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-CTRL-72-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-HQO-6-R-1-1	RPTEC/TERT1	1	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-6-RNA	252	micromolar	6	hour	DMSO
+UCD-1004-HQO-6-R-2-1	RPTEC/TERT1	2	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-6-RNA	252	micromolar	6	hour	DMSO
+UCD-1004-HQO-6-R-3-1	RPTEC/TERT1	3	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-6-RNA	252	micromolar	6	hour	DMSO
+UCD-1004-HQO-24-R-1-1	RPTEC/TERT1	1	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-24-RNA	252	micromolar	24	hour	DMSO
+UCD-1004-HQO-24-R-2-1	RPTEC/TERT1	2	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-24-RNA	252	micromolar	24	hour	DMSO
+UCD-1004-HQO-24-R-3-1	RPTEC/TERT1	3	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-24-RNA	252	micromolar	24	hour	DMSO
+UCD-1004-HQO-72-R-1-1	RPTEC/TERT1	1	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-72-RNA	252	micromolar	72	hour	DMSO
+UCD-1004-HQO-72-R-2-1	RPTEC/TERT1	2	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-72-RNA	252	micromolar	72	hour	DMSO
+UCD-1004-HQO-72-R-3-1	RPTEC/TERT1	3	hydroquinone	Genotoxic	FALSE	UCD-1004-CTRL-72-RNA	252	micromolar	72	hour	DMSO

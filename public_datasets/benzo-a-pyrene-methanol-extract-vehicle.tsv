@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+IMU_10_1_6_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_6_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_6_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_24_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_24_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_24_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_72_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU_10_1_72_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU_10_1_72_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU_10_3_6_W_1_1	RPTEC/TERT1	1	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_6_W_1_1	50	nanomolar	6	hour
+IMU_10_3_6_W_2_1	RPTEC/TERT1	2	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_6_W_2_1	50	nanomolar	6	hour
+IMU_10_3_6_W_3_1	RPTEC/TERT1	3	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_6_W_3_1	50	nanomolar	6	hour
+IMU_10_3_24_W_1_1	RPTEC/TERT1	1	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_24_W_1_1	50	nanomolar	24	hour
+IMU_10_3_24_W_2_1	RPTEC/TERT1	2	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_24_W_2_1	50	nanomolar	24	hour
+IMU_10_3_24_W_3_1	RPTEC/TERT1	3	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_24_W_3_1	50	nanomolar	24	hour
+IMU_10_3_72_W_1_1	RPTEC/TERT1	1	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_72_W_1_1	50	nanomolar	72	hour
+IMU_10_3_72_W_2_1	RPTEC/TERT1	2	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_72_W_2_1	50	nanomolar	72	hour
+IMU_10_3_72_W_3_1	RPTEC/TERT1	3	benzo[a]pyrene	Methanol Extract	FALSE	IMU_10_1_72_W_3_1	50	nanomolar	72	hour

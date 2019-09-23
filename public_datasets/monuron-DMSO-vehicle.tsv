@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1-1-6-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-6-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-6-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-24-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-24-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-24-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-72-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-1-72-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-1-72-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-3-6-R-1-X	RPTEC/TERT1	1	monuron	Non-genotoxic	FALSE	UCD-1-1-6-R	200	micromolar	6	hour	DMSO
+UCD-1-3-6-R-2-X	RPTEC/TERT1	2	monuron	Non-genotoxic	FALSE	UCD-1-1-6-R	200	micromolar	6	hour	DMSO
+UCD-1-3-6-R-3-X	RPTEC/TERT1	3	monuron	Non-genotoxic	FALSE	UCD-1-1-6-R	200	micromolar	6	hour	DMSO
+UCD-1-3-24-R-1-X	RPTEC/TERT1	1	monuron	Non-genotoxic	FALSE	UCD-1-1-24-R	200	micromolar	24	hour	DMSO
+UCD-1-3-24-R-2-X	RPTEC/TERT1	2	monuron	Non-genotoxic	FALSE	UCD-1-1-24-R	200	micromolar	24	hour	DMSO
+UCD-1-3-24-R-3-X	RPTEC/TERT1	3	monuron	Non-genotoxic	FALSE	UCD-1-1-24-R	200	micromolar	24	hour	DMSO
+UCD-1-3-72-R-1-X	RPTEC/TERT1	1	monuron	Non-genotoxic	FALSE	UCD-1-1-72-R	200	micromolar	72	hour	DMSO
+UCD-1-3-72-R-2-X	RPTEC/TERT1	2	monuron	Non-genotoxic	FALSE	UCD-1-1-72-R	200	micromolar	72	hour	DMSO
+UCD-1-3-72-R-3-X	RPTEC/TERT1	3	monuron	Non-genotoxic	FALSE	UCD-1-1-72-R	200	micromolar	72	hour	DMSO

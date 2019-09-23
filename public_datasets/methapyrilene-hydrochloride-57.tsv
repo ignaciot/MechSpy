@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+HUL-H-MED-24-R-1-2	HepG2	1	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-24-R-2-2	HepG2	2	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-24-R-3-2	HepG2	3	untreated	CTRL	TRUE				24	hour
+HUL-H-MED-72-R-1-2	HepG2	1	untreated	CTRL	TRUE				72	hour
+HUL-H-MED-72-R-2-2	HepG2	2	untreated	CTRL	TRUE				72	hour
+HUL-H-MED-72-R-3-2	HepG2	3	untreated	CTRL	TRUE				72	hour
+HUL-H-MPH2-24-R-1-2	HepG2	1	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-24-R	57	micromolar	24	hour
+HUL-H-MPH2-24-R-2-2	HepG2	2	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-24-R	57	micromolar	24	hour
+HUL-H-MPH2-24-R-3-2	HepG2	3	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-24-R	57	micromolar	24	hour
+HUL-H-MPH2-72-R-1-2	HepG2	1	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-72-R	57	micromolar	72	hour
+HUL-H-MPH2-72-R-2-2	HepG2	2	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-72-R	57	micromolar	72	hour
+HUL-H-MPH2-72-R-3-2	HepG2	3	methapyrilene hydrochloride	Non-genotoxic	FALSE	HUL-H-MED-72-R	57	micromolar	72	hour

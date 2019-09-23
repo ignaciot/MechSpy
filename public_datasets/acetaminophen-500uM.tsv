@@ -1,0 +1,25 @@
+Subject ID	Biological Replicate	Compound	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+AK77	2	DMSO	TRUE		0.5	%	12	hour
+AK105	3	DMSO	TRUE		0.5	%	12	hour
+AK133	4	DMSO	TRUE		0.5	%	12	hour
+AK84	2	DMSO	TRUE		0.5	%	24	hour
+AK112	3	DMSO	TRUE		0.5	%	24	hour
+AK140	4	DMSO	TRUE		0.5	%	24	hour
+AK91	2	DMSO	TRUE		0.5	%	48	hour
+AK119	3	DMSO	TRUE		0.5	%	48	hour
+AK147	4	DMSO	TRUE		0.5	%	48	hour
+AK98	2	DMSO	TRUE		0.5	%	72	hour
+AK126	3	DMSO	TRUE		0.5	%	72	hour
+AK154	4	DMSO	TRUE		0.5	%	72	hour
+AK81	2	Acetaminophen	FALSE	AK77	500	micromolar	12	hour
+AK109	3	Acetaminophen	FALSE	AK105	500	micromolar	12	hour
+AK137	4	Acetaminophen	FALSE	AK133	500	micromolar	12	hour
+AK88	2	Acetaminophen	FALSE	AK84	500	micromolar	24	hour
+AK116	3	Acetaminophen	FALSE	AK112	500	micromolar	24	hour
+AK144	4	Acetaminophen	FALSE	AK140	500	micromolar	24	hour
+AK95	2	Acetaminophen	FALSE	AK91	500	micromolar	48	hour
+AK123	3	Acetaminophen	FALSE	AK119	500	micromolar	48	hour
+AK151	4	Acetaminophen	FALSE	AK147	500	micromolar	48	hour
+AK102	2	Acetaminophen	FALSE	AK98	500	micromolar	72	hour
+AK130	3	Acetaminophen	FALSE	AK126	500	micromolar	72	hour
+AK158	4	Acetaminophen	FALSE	AK154	500	micromolar	72	hour

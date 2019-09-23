@@ -1,0 +1,15 @@
+Source Name	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose Duration	Dose Duration Unit	Dose	Dose Unit
+LUM-1-BR200.DMSO-24h-R-1-1	1	dimethyl sulfoxide	DMSO	TRUE		24	hour	0.005	percent
+LUM-1-BR200.DMSO-72h-R-1-1	1	dimethyl sulfoxide	DMSO	TRUE		72	hour	0.005	percent
+LUM-1-BR200.BaP 10-24h-R-1-1	1	benzo[a]pyrene	Genotoxic	FALSE	LUM-1-BR200.DMSO-24h-R-1-1	24	hour	10	micromolar
+LUM-1-BR200.BaP 10-72h-R-1-1	1	benzo[a]pyrene	Genotoxic	FALSE	LUM-1-BR200.DMSO-72h-R-1-1	72	hour	10	micromolar
+LUM-1-BR200.BaP 20-24h-R-1-1	1	benzo[a]pyrene	Genotoxic	FALSE	LUM-1-BR200.DMSO-24h-R-1-1	24	hour	20	micromolar
+LUM-1-BR200.BaP 20-72h-R-1-1	1	benzo[a]pyrene	Genotoxic	FALSE	LUM-1-BR200.DMSO-72h-R-1-1	72	hour	20	micromolar
+LUM-1-BR200.Beclo 100-24h-R-1-1	1	beclomethasone dipropionate	Non-carcinogen	FALSE	LUM-1-BR200.DMSO-24h-R-1-1	24	hour	100	micromolar
+LUM-1-BR200.Beclo 100-72h-R-1-1	1	beclomethasone dipropionate	Non-carcinogen	FALSE	LUM-1-BR200.DMSO-72h-R-1-1	72	hour	100	micromolar
+LUM-1-BR200.Beclo 50-24h-R-1-1	1	beclomethasone dipropionate	Non-carcinogen	FALSE	LUM-1-BR200.DMSO-24h-R-1-1	24	hour	50	micromolar
+LUM-1-BR200.Beclo 50-72h-R-1-1	1	beclomethasone dipropionate	Non-carcinogen	FALSE	LUM-1-BR200.DMSO-72h-R-1-1	72	hour	50	micromolar
+LUM-1-BR200.CdCl 12.5-24h-R-1-1	1	cadmium dichloride	Non-genotoxic	FALSE	LUM-1-BR200.Water-24h-R-1-1	24	hour	12.5	micromolar
+LUM-1-BR200.CdCl 12.5-72h-R-1-1	1	cadmium dichloride	Non-genotoxic	FALSE	LUM-1-BR200.Water-72h-R-1-1	72	hour	12.5	micromolar
+LUM-1-BR200.CdCl 6.25-24h-R-1-1	1	cadmium dichloride	Non-genotoxic	FALSE	LUM-1-BR200.Water-24h-R-1-1	24	hour	6.25	micromolar
+LUM-1-BR200.CdCl 6.25-72h-R-1-1	1	cadmium dichloride	Non-genotoxic	FALSE	LUM-1-BR200.Water-72h-R-1-1	72	hour	6.25	micromolar

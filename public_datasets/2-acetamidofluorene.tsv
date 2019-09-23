@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+VUB-1007-DMSO-24-R-1-1E	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+VUB-1008-DMSO-24-R-2-1A	HepaRG	2	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+VUB-1009-DMSO-24-R-3-1A	HepaRG	3	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+VUB-1007-DMSO-72-R-1-1K	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+VUB-1008-DMSO-72-R-2-1F	HepaRG	2	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+VUB-1009-DMSO-72-R-3-1F	HepaRG	3	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+VUB-1007-TAF-24-R-1-1	HepaRG	1	2-acetamidofluorene	Genotoxic	FALSE	VUB-1007-DMSO-24-R	40.75	micromolar	24	hour
+VUB-1008-TAF-24-R-2-1	HepaRG	2	2-acetamidofluorene	Genotoxic	FALSE	VUB-1008-DMSO-24-R	40.75	micromolar	24	hour
+VUB-1009-TAF-24-R-3-1	HepaRG	3	2-acetamidofluorene	Genotoxic	FALSE	VUB-1009-DMSO-24-R	40.75	micromolar	24	hour
+VUB-1007-TAF-72-R-1-1	HepaRG	1	2-acetamidofluorene	Genotoxic	FALSE	VUB-1007-DMSO-72-R	40.75	micromolar	72	hour
+VUB-1008-TAF-72-R-2-1	HepaRG	2	2-acetamidofluorene	Genotoxic	FALSE	VUB-1008-DMSO-72-R	40.75	micromolar	72	hour
+VUB-1009-TAF-72-R-3-1	HepaRG	3	2-acetamidofluorene	Genotoxic	FALSE	VUB-1009-DMSO-72-R	40.75	micromolar	72	hour

@@ -1,0 +1,20 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1004-CTRL-6-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-6-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-6-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1004-CTRL-24-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-24-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-24-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1004-CTRL-72-R-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-CTRL-72-R-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-CTRL-72-R-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1004-BEA-6-R-1-1	RPTEC/TERT1	1	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-6-RNA	10	millimolar	6	hour	DMSO
+UCD-1004-BEA-6-R-2-1	RPTEC/TERT1	2	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-6-RNA	10	millimolar	6	hour	DMSO
+UCD-1004-BEA-6-R-3-1	RPTEC/TERT1	3	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-6-RNA	10	millimolar	6	hour	DMSO
+UCD-1004-BEA-24-R-1-1	RPTEC/TERT1	1	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-24-RNA	10	millimolar	24	hour	DMSO
+UCD-1004-BEA-24-R-2-1	RPTEC/TERT1	2	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-24-RNA	10	millimolar	24	hour	DMSO
+UCD-1004-BEA-24-R-3-1	RPTEC/TERT1	3	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-24-RNA	10	millimolar	24	hour	DMSO
+UCD-1004-BEA-72-R-1-1	RPTEC/TERT1	1	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-72-RNA	10	millimolar	72	hour	DMSO
+UCD-1004-BEA-72-R-2-1	RPTEC/TERT1	2	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-72-RNA	10	millimolar	72	hour	DMSO
+UCD-1004-BEA-72-R-3-1	RPTEC/TERT1	3	benzyl alcohol	Non-carcinogen	FALSE	UCD-1004-CTRL-72-RNA	10	millimolar	72	hour	DMSO
+

@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD_1_1_6_C_1_1	RPTEC/TERT1	1	untreated	whole cell	TRUE		N/A	N/A	6	hour
+UCD_1_1_6_C_2_1	RPTEC/TERT1	2	untreated	whole cell	TRUE		N/A	N/A	6	hour
+UCD_1_1_6_C_3_1	RPTEC/TERT1	3	untreated	whole cell	TRUE		N/A	N/A	6	hour
+UCD_1_1_24_C_1_1	RPTEC/TERT1	1	untreated	whole cell	TRUE		N/A	N/A	24	hour
+UCD_1_1_24_C_2_1	RPTEC/TERT1	2	untreated	whole cell	TRUE		N/A	N/A	24	hour
+UCD_1_1_24_C_3_1	RPTEC/TERT1	3	untreated	whole cell	TRUE		N/A	N/A	24	hour
+UCD_1_1_72_C_1_1	RPTEC/TERT1	1	untreated	whole cell	TRUE		N/A	N/A	72	hour
+UCD_1_1_72_C_2_1	RPTEC/TERT1	2	untreated	whole cell	TRUE		N/A	N/A	72	hour
+UCD_1_1_72_C_3_1	RPTEC/TERT1	3	untreated	whole cell	TRUE		N/A	N/A	72	hour
+UCD_1_7_6_C_1_1	RPTEC/TERT1	1	diclofenac sodium	whole cell	FALSE	UCD_1_1_6_C_1_1	30	millimolar	6	hour
+UCD_1_7_6_C_2_1	RPTEC/TERT1	2	diclofenac sodium	whole cell	FALSE	UCD_1_1_6_C_2_1	30	millimolar	6	hour
+UCD_1_7_6_C_3_1	RPTEC/TERT1	3	diclofenac sodium	whole cell	FALSE	UCD_1_1_6_C_3_1	30	millimolar	6	hour
+UCD_1_7_24_C_1_1	RPTEC/TERT1	1	diclofenac sodium	whole cell	FALSE	UCD_1_1_24_C_1_1	30	millimolar	24	hour
+UCD_1_7_24_C_2_1	RPTEC/TERT1	2	diclofenac sodium	whole cell	FALSE	UCD_1_1_24_C_2_1	30	millimolar	24	hour
+UCD_1_7_24_C_3_1	RPTEC/TERT1	3	diclofenac sodium	whole cell	FALSE	UCD_1_1_24_C_3_1	30	millimolar	24	hour
+UCD_1_7_72_C_1_1	RPTEC/TERT1	1	diclofenac sodium	whole cell	FALSE	UCD_1_1_72_C_1_1	30	millimolar	72	hour
+UCD_1_7_72_C_2_1	RPTEC/TERT1	2	diclofenac sodium	whole cell	FALSE	UCD_1_1_72_C_2_1	30	millimolar	72	hour
+UCD_1_7_72_C_3_1	RPTEC/TERT1	3	diclofenac sodium	whole cell	FALSE	UCD_1_1_72_C_3_1	30	millimolar	72	hour

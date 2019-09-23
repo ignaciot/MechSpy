@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI_E2_DMSO_24h_M_2_1	HepaRG	2	dimethyl sulfoxide		TRUE				24	hour
+BPI_E2_DMSO_24h_M_2_2	HepaRG	2	dimethyl sulfoxide		TRUE				24	hour
+BPI_E3_DMSO_24h_M_2_1	HepaRG	2	dimethyl sulfoxide		TRUE				24	hour
+BPI_E2_DMSO_72h_M_2_2	HepaRG	2	dimethyl sulfoxide		TRUE				72	hour
+BPI_E3_DMSO_72h_M_2_2	HepaRG	2	dimethyl sulfoxide		TRUE				72	hour
+BPI_E3_DMSO_72h_M_2_2	HepaRG	2	dimethyl sulfoxide		TRUE				72	hour
+BPI_E2_2NF10_24h_M_2_1	HepaRG	2	2-nitrofluorene		FALSE	BPI_E2_DMSO_24h	0.018	micromolar	24	hour
+BPI_E2_2NF10_24h_M_2_2	HepaRG	2	2-nitrofluorene		FALSE	BPI_E2_DMSO_24h	0.018	micromolar	24	hour
+BPI_E3_2NF10_24h_M_2_1	HepaRG	2	2-nitrofluorene		FALSE	BPI_E3_DMSO_24h	0.018	micromolar	24	hour
+BPI_E2_2NF10_72h_M_2_2	HepaRG	2	2-nitrofluorene		FALSE	BPI_E2_DMSO_72h	0.018	micromolar	72	hour
+BPI_E3_2NF10_72h_M_2_1	HepaRG	2	2-nitrofluorene		FALSE	BPI_E3_DMSO_72h	0.018	micromolar	72	hour
+BPI_E3_2NF10_72h_M_2_1	HepaRG	2	2-nitrofluorene		FALSE	BPI_E3_DMSO_72h	0.018	micromolar	72	hour

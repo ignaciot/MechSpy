@@ -1,0 +1,25 @@
+Subject ID	Biological Replicate	Compound	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+AK77	2	DMSO	TRUE		0.5	%	12	hour
+AK105	3	DMSO	TRUE		0.5	%	12	hour
+AK133	4	DMSO	TRUE		0.5	%	12	hour
+AK84	2	DMSO	TRUE		0.5	%	24	hour
+AK112	3	DMSO	TRUE		0.5	%	24	hour
+AK140	4	DMSO	TRUE		0.5	%	24	hour
+AK91	2	DMSO	TRUE		0.5	%	48	hour
+AK119	3	DMSO	TRUE		0.5	%	48	hour
+AK147	4	DMSO	TRUE		0.5	%	48	hour
+AK98	2	DMSO	TRUE		0.5	%	72	hour
+AK126	3	DMSO	TRUE		0.5	%	72	hour
+AK154	4	DMSO	TRUE		0.5	%	72	hour
+AK82	2	Amiodarone	FALSE	AK77	7.5	micromolar	12	hour
+AK110	3	Amiodarone	FALSE	AK105	7.5	micromolar	12	hour
+AK138	4	Amiodarone	FALSE	AK133	7.5	micromolar	12	hour
+AK89	2	Amiodarone	FALSE	AK84	7.5	micromolar	24	hour
+AK117	3	Amiodarone	FALSE	AK112	7.5	micromolar	24	hour
+AK145	4	Amiodarone	FALSE	AK140	7.5	micromolar	24	hour
+AK96	2	Amiodarone	FALSE	AK91	7.5	micromolar	48	hour
+AK124	3	Amiodarone	FALSE	AK119	7.5	micromolar	48	hour
+AK152	4	Amiodarone	FALSE	AK147	7.5	micromolar	48	hour
+AK103	2	Amiodarone	FALSE	AK98	7.5	micromolar	72	hour
+AK131	3	Amiodarone	FALSE	AK126	7.5	micromolar	72	hour
+AK159	4	Amiodarone	FALSE	AK154	7.5	micromolar	72	hour

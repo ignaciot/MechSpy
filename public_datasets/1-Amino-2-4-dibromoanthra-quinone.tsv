@@ -1,0 +1,20 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1003-CTRL-6-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1003-CTRL-6-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1003-CTRL-6-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1003-CTRL-24-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1003-CTRL-24-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1003-CTRL-24-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1003-CTRL-72-RNA-1-1	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1003-CTRL-72-RNA-2-1	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1003-CTRL-72-RNA-3-1	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1003-ADA-6-RNA-1-1	RPTEC/TERT1	1	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-6-RNA	150	micromolar	6	hour	DMSO
+UCD-1003-ADA-6-RNA-2-1	RPTEC/TERT1	2	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-6-RNA	150	micromolar	6	hour	DMSO
+UCD-1003-ADA-6-RNA-3-1	RPTEC/TERT1	3	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-6-RNA	150	micromolar	6	hour	DMSO
+UCD-1003-ADA-24-RNA-1-1	RPTEC/TERT1	1	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-24-RNA	150	micromolar	24	hour	DMSO
+UCD-1003-ADA-24-RNA-2-1	RPTEC/TERT1	2	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-24-RNA	150	micromolar	24	hour	DMSO
+UCD-1003-ADA-24-RNA-3-1	RPTEC/TERT1	3	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-24-RNA	150	micromolar	24	hour	DMSO
+UCD-1003-ADA-72-RNA-1-1	RPTEC/TERT1	1	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-72-RNA	150	micromolar	72	hour	DMSO
+UCD-1003-ADA-72-RNA-2-1	RPTEC/TERT1	2	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-72-RNA	150	micromolar	72	hour	DMSO
+UCD-1003-ADA-72-RNA-3-1	RPTEC/TERT1	3	1-Amino-2,4-dibromoanthra-quinone	Genotoxic	FALSE	UCD-1003-CTRL-72-RNA	150	micromolar	72	hour	DMSO
+

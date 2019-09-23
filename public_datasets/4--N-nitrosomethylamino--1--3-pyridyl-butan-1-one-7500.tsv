@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI-T5-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				24	hour
+BPI-T6-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				24	hour
+BPI-T7-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE			micromolar	24	hour
+BPI-T5-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				72	hour
+BPI-T6-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				72	hour
+BPI-T7-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE			micromolar	72	hour
+BPI-T5-NNK10-24h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T5-Media-24h-R-1-1	7500	micromolar	24	hour
+BPI-T6-NNK10-24h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T6-Media-24h-R-1-1	7500	micromolar	24	hour
+BPI-T7-NNK10-24h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T7-Media-24h-R-1-1	7500	micromolar	24	hour
+BPI-T5-NNK10-72h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T5-Media-72h-R-1-1	7500	micromolar	72	hour
+BPI-T6-NNK10-72h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T6-Media-72h-R-1-1	7500	micromolar	72	hour
+BPI-T7-NNK10-72h-R-1-1	HepaRG	1	4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	Genotoxic	FALSE	BPI-T7-Media-72h-R-1-1	7500	micromolar	72	hour

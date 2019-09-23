@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+IMU_10_1_6_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_6_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_6_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				6	hour
+IMU_10_1_24_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_24_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_24_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				24	hour
+IMU_10_1_72_W_1_1	RPTEC/TERT1	1	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU_10_1_72_W_2_1	RPTEC/TERT1	2	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU_10_1_72_W_3_1	RPTEC/TERT1	3	dimethyl sulfoxide	Methanol Extract	FALSE				72	hour
+IMU10_7_6_ME_1_1	RPTEC/TERT1	1	clonidine	Methanol Extract	FALSE	IMU_10_1_6_W_1_1	2500	1	6	hour
+IMU10_7_6_ME_2_1	RPTEC/TERT1	2	clonidine	Methanol Extract	FALSE	IMU_10_1_6_W_2_1	2500	2	6	hour
+IMU10_7_6_ME_3_1	RPTEC/TERT1	3	clonidine	Methanol Extract	FALSE	IMU_10_1_6_W_3_1	2500	3	6	hour
+IMU10_7_24_ME_1_1	RPTEC/TERT1	1	clonidine	Methanol Extract	FALSE	IMU_10_1_24_W_1_1	2500	1	24	hour
+IMU10_7_24_ME_2_1	RPTEC/TERT1	2	clonidine	Methanol Extract	FALSE	IMU_10_1_24_W_2_1	2500	2	24	hour
+IMU10_7_24_ME_3_1	RPTEC/TERT1	3	clonidine	Methanol Extract	FALSE	IMU_10_1_24_W_3_1	2500	3	24	hour
+IMU10_7_72_ME_1_1	RPTEC/TERT1	1	clonidine	Methanol Extract	FALSE	IMU_10_1_72_W_1_1	2500	1	72	hour
+IMU10_7_72_ME_2_1	RPTEC/TERT1	2	clonidine	Methanol Extract	FALSE	IMU_10_1_72_W_2_1	2500	2	72	hour
+IMU10_7_72_ME_3_1	RPTEC/TERT1	3	clonidine	Methanol Extract	FALSE	IMU_10_1_72_W_3_1	2500	3	72	hour

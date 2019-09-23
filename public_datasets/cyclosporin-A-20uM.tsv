@@ -1,0 +1,25 @@
+Subject ID	Biological Replicate	Compound	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+AK77	2	DMSO	TRUE		0.5	%	12	hour
+AK105	3	DMSO	TRUE		0.5	%	12	hour
+AK133	4	DMSO	TRUE		0.5	%	12	hour
+AK84	2	DMSO	TRUE		0.5	%	24	hour
+AK112	3	DMSO	TRUE		0.5	%	24	hour
+AK140	4	DMSO	TRUE		0.5	%	24	hour
+AK91	2	DMSO	TRUE		0.5	%	48	hour
+AK119	3	DMSO	TRUE		0.5	%	48	hour
+AK147	4	DMSO	TRUE		0.5	%	48	hour
+AK98	2	DMSO	TRUE		0.5	%	72	hour
+AK126	3	DMSO	TRUE		0.5	%	72	hour
+AK154	4	DMSO	TRUE		0.5	%	72	hour
+AK80	2	Cyclosporin A	FALSE	AK77	20	micromolar	12	hour
+AK108	3	Cyclosporin A	FALSE	AK105	20	micromolar	12	hour
+AK136	4	Cyclosporin A	FALSE	AK133	20	micromolar	12	hour
+AK87	2	Cyclosporin A	FALSE	AK84	20	micromolar	24	hour
+AK115	3	Cyclosporin A	FALSE	AK112	20	micromolar	24	hour
+AK143	4	Cyclosporin A	FALSE	AK140	20	micromolar	24	hour
+AK94	2	Cyclosporin A	FALSE	AK91	20	micromolar	48	hour
+AK122	3	Cyclosporin A	FALSE	AK119	20	micromolar	48	hour
+AK150	4	Cyclosporin A	FALSE	AK147	20	micromolar	48	hour
+AK101	2	Cyclosporin A	FALSE	AK98	20	micromolar	72	hour
+AK129	3	Cyclosporin A	FALSE	AK126	20	micromolar	72	hour
+AK157	4	Cyclosporin A	FALSE	AK154	20	micromolar	72	hour

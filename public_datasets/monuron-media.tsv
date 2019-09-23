@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD_1_1_6_M_1_1	RPTEC/TERT1	1	untreated	media	TRUE		N/A	N/A	6	hour
+UCD_1_1_6_M_2_1	RPTEC/TERT1	2	untreated	media	TRUE		N/A	N/A	6	hour
+UCD_1_1_6_M_3_1	RPTEC/TERT1	3	untreated	media	TRUE		N/A	N/A	6	hour
+UCD_1_1_24_M_1_1	RPTEC/TERT1	1	untreated	media	TRUE		N/A	N/A	24	hour
+UCD_1_1_24_M_2_1	RPTEC/TERT1	2	untreated	media	TRUE		N/A	N/A	24	hour
+UCD_1_1_24_M_3_1	RPTEC/TERT1	3	untreated	media	TRUE		N/A	N/A	24	hour
+UCD_1_1_72_M_1_1	RPTEC/TERT1	1	untreated	media	TRUE		N/A	N/A	72	hour
+UCD_1_1_72_M_2_1	RPTEC/TERT1	2	untreated	media	TRUE		N/A	N/A	72	hour
+UCD_1_1_72_M_3_1	RPTEC/TERT1	3	untreated	media	TRUE		N/A	N/A	72	hour
+UCD_1_3_6_M_1_1	RPTEC/TERT1	1	monuron	media	FALSE	UCD_1_1_6_M_1_1	200	millimolar	6	hour
+UCD_1_3_6_M_2_1	RPTEC/TERT1	2	monuron	media	FALSE	UCD_1_1_6_M_2_1	200	millimolar	6	hour
+UCD_1_3_6_M_3_1	RPTEC/TERT1	3	monuron	media	FALSE	UCD_1_1_6_M_3_1	200	millimolar	6	hour
+UCD_1_3_24_M_1_1	RPTEC/TERT1	1	monuron	media	FALSE	UCD_1_1_24_M_1_1	200	millimolar	24	hour
+UCD_1_3_24_M_2_1	RPTEC/TERT1	2	monuron	media	FALSE	UCD_1_1_24_M_2_1	200	millimolar	24	hour
+UCD_1_3_24_M_3_1	RPTEC/TERT1	3	monuron	media	FALSE	UCD_1_1_24_M_3_1	200	millimolar	24	hour
+UCD_1_3_72_M_1_1	RPTEC/TERT1	1	monuron	media	FALSE	UCD_1_1_72_M_1_1	200	millimolar	72	hour
+UCD_1_3_72_M_2_1	RPTEC/TERT1	2	monuron	media	FALSE	UCD_1_1_72_M_2_1	200	millimolar	72	hour
+UCD_1_3_72_M_3_1	RPTEC/TERT1	3	monuron	media	FALSE	UCD_1_1_72_M_3_1	200	millimolar	72	hour

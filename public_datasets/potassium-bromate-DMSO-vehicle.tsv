@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-1-1-6-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-6-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-6-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-1-1-24-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-24-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-24-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-1-1-72-R-1-X	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-1-72-R-2-X	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-1-72-R-3-X	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-1-5-6-R-1-X	RPTEC/TERT1	1	potassium bromate	Genotoxic	FALSE	UCD-1-1-6-R	1	millimolar	6	hour	DMSO
+UCD-1-5-6-R-2-X	RPTEC/TERT1	2	potassium bromate	Genotoxic	FALSE	UCD-1-1-6-R	1	millimolar	6	hour	DMSO
+UCD-1-5-6-R-3-X	RPTEC/TERT1	3	potassium bromate	Genotoxic	FALSE	UCD-1-1-6-R	1	millimolar	6	hour	DMSO
+UCD-1-5-24-R-1-X	RPTEC/TERT1	1	potassium bromate	Genotoxic	FALSE	UCD-1-1-24-R	1	millimolar	24	hour	DMSO
+UCD-1-5-24-R-2-X	RPTEC/TERT1	2	potassium bromate	Genotoxic	FALSE	UCD-1-1-24-R	1	millimolar	24	hour	DMSO
+UCD-1-5-24-R-3-X	RPTEC/TERT1	3	potassium bromate	Genotoxic	FALSE	UCD-1-1-24-R	1	millimolar	24	hour	DMSO
+UCD-1-5-72-R-1-X	RPTEC/TERT1	1	potassium bromate	Genotoxic	FALSE	UCD-1-1-72-R	1	millimolar	72	hour	DMSO
+UCD-1-5-72-R-2-X	RPTEC/TERT1	2	potassium bromate	Genotoxic	FALSE	UCD-1-1-72-R	1	millimolar	72	hour	DMSO
+UCD-1-5-72-R-3-X	RPTEC/TERT1	3	potassium bromate	Genotoxic	FALSE	UCD-1-1-72-R	1	millimolar	72	hour	DMSO

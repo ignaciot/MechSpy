@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI-T2-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T3-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T4-DMSO-24h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	24	hour
+BPI-T2-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T3-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T4-DMSO-72h-R-1-1	HepaRG	1	dimethyl sulfoxide	DMSO	TRUE		0.5	percent	72	hour
+BPI-T2-SPB10-24h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T2-DMSO-24h	50	micromolar	24	hour
+BPI-T3-SPB5-24h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T3-DMSO-24h	50	micromolar	24	hour
+BPI-T4-SPB10-24h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T4-DMSO-24h-R-1-1	50	micromolar	24	hour
+BPI-T2-SPB10-72h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T2-DMSO-72h	50	micromolar	72	hour
+BPI-T3-SPB5-72h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T3-DMSO-72h	50	micromolar	72	hour
+BPI-T4-SPB10-72h-R-1-1	HepaRG	1	phenobarbital sodium	Non-genotoxic	FALSE	BPI-T4-DMSO-72h-R-1-1	50	micromolar	72	hour

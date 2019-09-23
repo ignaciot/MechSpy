@@ -1,0 +1,13 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit
+BPI-T2-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				24	hour
+BPI-T3-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				24	hour
+BPI-T4-Media-24h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				24	hour
+BPI-T2-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				72	hour
+BPI-T3-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				72	hour
+BPI-T4-Media-72h-R-1-1	HepaRG	1	untreated	CTRL	TRUE				72	hour
+BPI-T2-DMO5-24h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T2-Media-24h	187.5	micromolar	24	hour
+BPI-T3-DMO5-24h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T3-Media-24h	187.5	micromolar	24	hour
+BPI-T4-DMO5-24h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T4-Media-24h	187.5	micromolar	24	hour
+BPI-T2-DMO5-72h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T2-Media-48h	187.5	micromolar	72	hour
+BPI-T3-DMO5-72h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T3-Media-48h	187.5	micromolar	72	hour
+BPI-T4-DMO5-72h-R-1-1	HepaRG	1	D-mannitol	Non-carcinogen	FALSE	BPI-T4-Media-48h	187.5	micromolar	72	hour

@@ -1,0 +1,19 @@
+Source Name	Strain	Biological Replicate	Compound	Compound Class	Control	Sample Match	Dose	Dose Unit	Dose Duration	Dose Duration Unit	Vehicle	Mechanisms
+UCD-02-1-006-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-02-1-006-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-02-1-006-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	6	hour
+UCD-02-1-024-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-02-1-024-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-02-1-024-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	24	hour
+UCD-02-1-072-R-1-x	RPTEC/TERT1	1	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-02-1-072-R-2-x	RPTEC/TERT1	2	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-02-1-072-R-3-x	RPTEC/TERT1	3	dimethyl sulfoxide	DMSO	TRUE		0.1	percent	72	hour
+UCD-02-7-006-R-1-x	RPTEC/TERT1	1	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-006-R	30	micromolar	6	hour	DMSO
+UCD-02-7-006-R-2-x	RPTEC/TERT1	2	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-006-R	30	micromolar	6	hour	DMSO
+UCD-02-7-006-R-3-x	RPTEC/TERT1	3	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-006-R	30	micromolar	6	hour	DMSO
+UCD-02-7-024-R-1-x	RPTEC/TERT1	1	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-024-R	30	micromolar	24	hour	DMSO
+UCD-02-7-024-R-2-x	RPTEC/TERT1	2	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-024-R	30	micromolar	24	hour	DMSO
+UCD-02-7-024-R-3-x	RPTEC/TERT1	3	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-1-024-R	30	micromolar	24	hour	DMSO
+UCD-02-7-072-R-1-x	RPTEC/TERT1	1	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-6-072-R	30	micromolar	72	hour	DMSO
+UCD-02-7-072-R-2-x	RPTEC/TERT1	2	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-6-072-R	30	micromolar	72	hour	DMSO
+UCD-02-7-072-R-3-x	RPTEC/TERT1	3	diclofenac sodium	Non-carcinogen	FALSE	UCD-02-6-072-R	30	micromolar	72	hour	DMSO
