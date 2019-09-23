@@ -2,7 +2,7 @@
 
 ## Mechanistic inference for toxicology
 
-This repository provide the code for the publication "Applying Knowledge-Driven Mechanistic Inference to Toxiogenomics" (DOI: xxxxxxxxxxxx) and contains the collection of scripts to reproduce the results obtained. Besides the code, this repository provides:
+This repository provide the code for the publication "Applying knowledge-driven mechanistic inference to toxicogenomics" (DOI: xxxxxxxxxxxx) and contains the collection of scripts to reproduce the results obtained. Besides the code, this repository provides:
 
 * Vector embeddings of the knowledge graph used for the inference step, generated using node2vec.
 * Knowledge graph utilized for this study (extended from the KG created for [PheKnowLator](https://github.com/callahantiff/PheKnowLator/wiki)), exported as a NetworkX object.
