@@ -86,7 +86,7 @@ If you have any questions, please (preferably) open an issue on this GitHub repo
 
 If you have used MechSpy or any of the processed data shared in this repository for your research, please cite the following article:
 
-Tripodi, I. J. et al, "Mechanistic inference from knowledge representation: a toxicogenomics case study" [UPDATE URL AND DOI AFTER THE MANUSCRIPT IS ACCEPTED BY A JOURNAL]
+Tripodi, I. J. et al, "Mechanistic inference from knowledge representation: a toxicogenomics case study" [UPDATE URL AND DOI]
     
 
 
