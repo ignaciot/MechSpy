@@ -24,7 +24,7 @@ The following versions of Python v3.7.2 libraries were used when running this co
 
 To clone this repo:
 
-    $ git clone git@github.com:UCDenver-ccp/MechSpy.git
+    $ git clone git@github.com:ignaciot/MechSpy.git
     $ cd MechSpy
 
 All large files to reproduce this analysis can be downloaded from our [figshare project](https://figshare.com/projects/Mechanistic_Inference/70412).
