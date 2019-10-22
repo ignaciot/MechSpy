@@ -1,1 +1,4 @@
-Here is where both the graph representation as a list of triples and as a pickled NetworkX object will be stored.
+Both the graph representation as a list of triples and as a pickled NetworkX object are available at figshare and can be downloaded into this directoy after cloning this GitHub repository:
+
+https://figshare.com/projects/Mechanistic_Inference/70412
+
