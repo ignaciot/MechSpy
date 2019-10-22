@@ -27,6 +27,8 @@ To clone this repo:
     $ git clone git@github.com:UCDenver-ccp/MechSpy.git
     $ cd MechSpy
 
+All large files to reproduce this analysis can be downloaded from our [figshare project](https://figshare.com/projects/Mechanistic_Inference/70412).
+
 This will eventually become an easier to use, single-tool with easier to compose configuration files. In the meantime, these are the steps to generate predictions of the most likely mechanisms of toxicity from your own time series of gene expression data:
 
 1. Identify the most significant changes in gene expression at each time point. You can use your favorite tool for this, as long as the output is formatted as the following tab-separated columns: `Gene number <TAB> Gene symbol <TAB> log(fold change) <TAB> Adjusted p-value`, one file per time point. If your time series was conducted using microarrays, any of the provided R scripts under the `differential_analysis_example_scripts` directory can be modified to match your number of replicates and time points and use Limma to generate this list of differential genes. Be sure to run `install_requirements.R` and install any additional pre-requisites (e.g. system libraries) beforehand.
