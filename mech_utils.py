@@ -74,7 +74,7 @@ else:
             else:
                 node_id = int(chunks[0])
                 for i in list(range(1, emb_size+1)):
-                    emb[node_id, i-1] = float(chunks[i])
+                    EMB[node_id, i-1] = float(chunks[i])
     np.save(EMBEDDINGS_NUMPY, EMB)
 
 
