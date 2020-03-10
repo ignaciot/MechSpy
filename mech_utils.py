@@ -1,11 +1,13 @@
 import numpy as np
 import networkx as nx
 import os
+import pandas as pd
 
 MAX_NODES = 3
 NON_CLOSED_MAX_NODES = 4
 DIRECTED_NX_GRAPH = './knowledge_graphs/Directed_KG_triples_no-mesh.gpickle'
 NON_CLOSED_DIRECTED_NX_GRAPH = './knowledge_graphs/non-closed_Directed_KG_triples_no-mesh.gpickle'
+#NON_CLOSED_DIRECTED_NX_GRAPH = "../pheknowlator/PheKnowLator_full_NotClosed_NoOWLSemantics_Triples_Integers.gpickle"
 
 ENTREZ_MAPPINGS = "./entrez/gene_symbol_to_entrez_id.tsv"
 ALIASES = "./entrez/gene_with_protein_product.txt"
@@ -17,8 +19,14 @@ GENE_LABELS_NP = 'numpy_dumps/mech2gene_gene_labels.npy'
 MECH_LABELS_NP = 'numpy_dumps/mech2gene_mech_labels.npy'
 
 ONTO_LABELS = "labels/all_labels.tsv"
+#ONTO_LABELS = "../pheknowlator/PheKnowLator_full_NotClosed_NoOWLSemantics_NodeLabels.txt"
+TISSUE_SPECIFICITY = "./entrez/genes_active_in_tissue.csv"
 
 PATH_COUNT_LIMIT = 10000
+
+GRCH38_GENES = "./variants/refseq_hg38_genes.bed"
+GRCH38_SNPS = "./variants/parsed_locii/pathogenic_snps.bed"
+GIGGLE_INDICES = "./variants/locii_sort_b"
 
 NODE_BLACKLIST = [  '<http://purl.obolibrary.org/obo/GO_0003674>',
                     '<http://purl.obolibrary.org/obo/GO_0008150>',
@@ -110,10 +118,27 @@ def get_graph():
 def get_non_closed_graph():
     G = nx.read_gpickle(NON_CLOSED_DIRECTED_NX_GRAPH)
     # Get rid of some root/hub nodes for path intersections we don't care about:
-    for bl_node in NODE_BLACKLIST:
-        if G.has_node(bl_node):
-            G.remove_node(bl_node)
+#    for bl_node in NODE_BLACKLIST:
+#        if G.has_node(bl_node):
+#            G.remove_node(bl_node)
     return G
+
+def get_variants(gene_name):
+    gene_df = pd.read_csv(GRCH38_GENES, sep="\t", na_filter=False, \
+                          usecols=[0, 1, 2, 3], names=['chrom', 'start', 'end', 'name'])
+    # account for multiple isoforms
+    this_gene_df = gene_df[gene_df['name'] == gene_name]
+    variants = []
+    if len(this_gene_df) > 0:
+        start = this_gene_df.start.min()
+        end = this_gene_df.end.max()
+        chrom = this_gene_df.chrom.unique()[0]
+        snp_df = pd.read_csv(GRCH38_SNPS, sep="\t", na_filter=False, \
+                            usecols=[0, 1, 2, 4], names=['chrom', 'start', 'end', 'rs'])
+        variants = list(snp_df[(snp_df['chrom'] == chrom) & (snp_df['start'] >= start) & (snp_df['end'] <= end)].rs)
+
+    return variants
+
 
 def get_node_embedding(node):
     node_idx = NODE_INDEX[node]
