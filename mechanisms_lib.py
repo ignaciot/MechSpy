@@ -134,7 +134,7 @@ M8_NODE_LABELS = [
             'cellular response to estrogen stimulus',
         ]
 M8_NODES = [
-#            "<http://purl.obolibrary.org/obo/GO_0031072>",
+#            "<http://purl.obolibrary.org/obo/GO_0031072",
             "<http://purl.obolibrary.org/obo/GO_0042803>",
             "<http://purl.obolibrary.org/obo/GO_0034056>",
             "<http://purl.obolibrary.org/obo/GO_0030284>",
@@ -170,7 +170,7 @@ M10_NODE_LABELS = [
             'androgen receptor signaling pathway',
         ]
 M10_NODES = [
-#            "<http://purl.obolibrary.org/obo/GO_0031072>",
+#            "<http://purl.obolibrary.org/obo/GO_0031072",
             "<http://purl.obolibrary.org/obo/GO_0046983>",
             "<http://purl.obolibrary.org/obo/GO_0050681>",
             "<http://purl.obolibrary.org/obo/GO_0030521>",
