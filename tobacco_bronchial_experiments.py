@@ -2,7 +2,7 @@ import glob
 import os
 
 EXP_SET_ID = "tobacco-respiratory-tissue"
-EXP_CELLS = "bronchial-epithelial"
+EXP_CELLS = "bronchial epithelium"
 
 EXP_ROOT = "./microarray"
 

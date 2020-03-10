@@ -2,7 +2,7 @@ import glob
 import os
 
 EXP_SET_ID = "diXa-078-liver"
-EXP_CELLS = "hepatocytes"
+EXP_CELLS = "liver|hep g2"
 
 EXP_ROOT = "./microarray"
 

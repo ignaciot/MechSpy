@@ -2,7 +2,7 @@ import glob
 import os
 
 EXP_SET_ID = "rest-Open-TG-Gates"
-EXP_CELLS = "hepatocytes"
+EXP_CELLS = "liver"
 
 EXP_ROOT = "./microarray"
 

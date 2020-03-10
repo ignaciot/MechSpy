@@ -2,7 +2,7 @@ import glob
 import os
 
 EXP_SET_ID = "diXa-004-lung"
-EXP_CELLS = "lung-epithelial"
+EXP_CELLS = "lung"
 
 EXP_ROOT = "./microarray"
 
