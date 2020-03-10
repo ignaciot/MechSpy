@@ -14,17 +14,31 @@ import mechanisms_lib
 
 
 labels_df = pd.read_csv(mech_utils.ONTO_LABELS, sep="\t", na_filter=False,
-                        names=['concept', 'label'])
+                        usecols=[0, 1], names=['concept', 'label'])
+
+G = mech_utils.get_non_closed_graph()
+
+# TODO: THIS SHOULD COME FROM THE EXPERIMENT DESCRIPTION FILE
+#tissue_type = "http://purl.obolibrary.org/obo/CL_0000182"
 
 def generate_explanation(experiment_set_results):
     experiment_set = next(iter(experiment_set_results.keys()))
     expl_data = {}
     nr_time_points = len(exp_lib.EXPERIMENTS[experiment_set])
-    G = mech_utils.get_non_closed_graph()
 
     if 'top_3_mech' not in experiment_set_results[experiment_set].keys():
         print("No predictions for %s, skipping." % experiment_set)
         return []
+
+    tissue_type = experiment_set_results[experiment_set]['tissue_type']
+    tissue_df = pd.read_csv(mech_utils.TISSUE_SPECIFICITY, sep="\t", na_filter=False,
+                            usecols=[0, 1], names=['entrez_id', 'tissue'])
+    if '|' in tissue_type:
+        tissue_types = tissue_type.split('|')
+        tissue_df = tissue_df[(tissue_df['tissue'].isin(tissue_types))]
+    else:
+        tissue_df = tissue_df[(tissue_df['tissue'] == tissue_type)]
+    active_genes_in_tissue = tissue_df['entrez_id'].unique()
 
     for top_mech in experiment_set_results[experiment_set]['top_3_mech']:
         gene_paths_per_step = dict()
@@ -39,8 +53,9 @@ def generate_explanation(experiment_set_results):
             gene_paths_per_step[mech_step] = []
             direct_gene_paths_per_step[mech_step] = []
         print("Processing top mechanism %s for %s" % (top_mech, experiment_set))
+        related_variants = []
         for result_key in natsorted(experiment_set_results[experiment_set].keys()):
-            if result_key[-6:] == '_genes':
+            if result_key[-6:] == '_genes' and result_key != 'tissue_type':
                 # figure out which mechanism steps correspond to this time point (sequential weight of 1.0)
                 mech_weight_bins = mech_utils.get_mech_step_weights(nr_mech_steps, 
                                                                     nr_time_points, 
@@ -49,7 +64,16 @@ def generate_explanation(experiment_set_results):
 
                 # TODO: good loop to multiprocess:
                 gene_nr = 0
+                relevant_genes_to_tissue = []
                 for (gene, gene_change) in list(set(experiment_set_results[experiment_set][result_key])):
+                    gene_with_path = False
+                    #gene = gene_orig[1:-1]
+                    #matches = labels_df[(labels_df.concept==gene.split('/')[-1])]
+                    #if len(matches) == 0:
+                    #    if gene.split('/')[-1] not in G.nodes():
+                    #        print("Gene %s is not in the KG" % gene)
+                    #    continue
+                    #gene_label = matches.label.values[0]
                     gene_label = labels_df[(labels_df.concept==gene)].label.values[0]
                     if gene_nr < 5:
                         all_significant_genes[gene_nr].append(gene_label.split(" (")[0])
@@ -61,19 +85,46 @@ def generate_explanation(experiment_set_results):
                         try:
                             for path in nx.all_shortest_paths(G, source=gene, target=mech_step):
                                 if len(path) == 2:
+                                    gene_with_path = True
                                     direct_gene_paths_per_step[mech_step].append((gene_change, path))
                                 if len(path) == 3 and 'geneid' in path[1]:
                                     aggregated_nodes.append(path[1])
                                     found_paths = True
+                                    gene_with_path = True
+                                    variants = mech_utils.get_variants(gene_label.split(" (")[0])
+                                    if len(variants) > 0:
+                                        for variant in variants:
+                                            if variant not in related_variants:
+                                                related_variants.append(variant)
+                                    int_gene_label = labels_df[(labels_df.concept==path[1])].label.values[0]
+                                    variants = mech_utils.get_variants(int_gene_label.split(" (")[0])
+                                    if len(variants) > 0:
+                                        for variant in variants:
+                                            if variant not in related_variants:
+                                                related_variants.append(variant)
                                 elif len(path) <= mech_utils.MAX_NODES or any(['reactome' in x for x in path]):
                                     gene_paths_per_step[mech_step].append((gene_change, path))
                                     found_paths = True
+                                    gene_with_path = True
+                                    variants = mech_utils.get_variants(gene_label.split(" (")[0])
+                                    if len(variants) > 0:
+                                        for variant in variants:
+                                            if variant not in related_variants:
+                                                related_variants.append(variant)
+
+
                         except nx.exception.NetworkXNoPath as e:
                             #print("No paths")
                             pass
                         except nx.exception.NodeNotFound as e:
                             #print("No gene node for %s" % gene_node)
                             pass
+
+                        # Check if any of the genes involved are known to be active in the current tissue type
+                        if gene_with_path:
+                            entrez_id = int(gene.split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
+                            if entrez_id in active_genes_in_tissue:
+                                relevant_genes_to_tissue.append(gene)
 
                         if len(aggregated_nodes) > 1:
                             gene_paths_per_step[mech_step].append((gene_change, [gene, ';'.join(aggregated_nodes), mech_step]))
@@ -99,7 +150,8 @@ def generate_explanation(experiment_set_results):
         for mech_step in gene_paths_per_step.keys():
             prefix = ""
             last_concept_1 = ""
-            for (gene_change, path) in gene_paths_per_step[mech_step]:
+            #for (gene_change, path) in gene_paths_per_step[mech_step]:
+            for (gene_change, path) in sorted(gene_paths_per_step[mech_step], key=lambda x:x[1][0]):
                 destination = 1
                 while destination < len(path):
                     try:
@@ -116,14 +168,42 @@ def generate_explanation(experiment_set_results):
                         relation = relation_concept
                     try:
                         if ';' in path[destination - 1]:
-                            concept_1 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination - 1].split(';')])
+                            concept_1 = ''
+                            for some_node in path[destination - 1].split(';'):
+                                if some_node in relevant_genes_to_tissue:
+                                    if concept_1 == '':
+                                        concept_1 += " %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                    else:
+                                        concept_1 += ", %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                else:
+                                    if concept_1 == '':
+                                        concept_1 += " %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                    else:
+                                        concept_1 += ", %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                            #concept_1 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination - 1].split(';')])
+                        elif path[destination - 1] in relevant_genes_to_tissue:
+                            concept_1 = "%s[*]" % labels_df[(labels_df.concept==path[destination - 1])].label.values[0]
                         else:
                             concept_1 = labels_df[(labels_df.concept==path[destination - 1])].label.values[0]
                     except IndexError as e:
                         concept_1 = path[destination - 1]
                     try:
                         if ';' in path[destination]:
-                            concept_2 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination].split(';')])
+                            concept_2 = ''
+                            for some_node in path[destination].split(';'):
+                                if some_node in relevant_genes_to_tissue:
+                                    if concept_2 == '':
+                                        concept_2 += " %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                    else:
+                                        concept_2 += ", %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                else:
+                                    if concept_2 == '':
+                                        concept_2 += " %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                                    else:
+                                        concept_2 += ", %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
+                            #concept_2 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination].split(';')])
+                        elif path[destination] in relevant_genes_to_tissue:
+                            concept_2 = "%s[*]" % labels_df[(labels_df.concept==path[destination])].label.values[0]
                         else:
                             concept_2 = labels_df[(labels_df.concept==path[destination])].label.values[0]
                     except IndexError as e:
@@ -164,18 +244,29 @@ def generate_explanation(experiment_set_results):
                     if max_len_2> 20:
                         max_len_2 = 20
                     if destination == 1:
-                        output += ".\n%d. %s %s %s %s" % (path_nr, gene_change, concept_1, relation, concept_2.replace("\n", ''))
+                        if "[*]" in concept_1:
+                            output += ".\n%d. %s %s[*] %s %s" % (path_nr, gene_change, concept_1, relation, concept_2.replace("\n", ''))
+                        else:
+                            output += ".\n%d. %s %s %s %s" % (path_nr, gene_change, concept_1, relation, concept_2.replace("\n", ''))
                         prefix = ", and"
                         if concept_1_short not in visited_nodes:
                             visited_nodes.append(concept_1_short)
                             if destination == 1:
-                                explanation_graph.node(concept_1_short, concept_1_short, pos="0,%s!" % graph_row, style="filled", fillcolor="#d3d3d3", fontname="FreeSans", fontsize="12")
+                                if "[*]" in concept_1:
+                                    explanation_graph.node(concept_1_short, concept_1_short, pos="0,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#d3d3d3", fontname="FreeSans", fontsize="12")
+                                else:
+
+                                    explanation_graph.node(concept_1_short, concept_1_short, pos="0,%s!" % graph_row, style="filled", fillcolor="#d3d3d3", fontname="FreeSans", fontsize="12")
+                            elif "[*]" in concept_1:
+                                explanation_graph.node(concept_1_short, concept_1_short, pos="0,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                             else:
                                 explanation_graph.node(concept_1_short, concept_1_short, pos="0,%s!" % graph_row, style="filled", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                         if concept_2_short not in visited_nodes:
                             visited_nodes.append(concept_2_short)
                             if path[destination] in mech_steps:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
+                            elif "[*]" in concept_2:
+                                explanation_graph.node(concept_2_short, concept_2_short, pos="10,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                             else:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="10,%s!" % graph_row, style="filled", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                     else:
@@ -185,11 +276,13 @@ def generate_explanation(experiment_set_results):
                             else:
                                 output += "%s they all %s %s" % (prefix, relation, concept_2.replace("\n", ''))
                         else:
-                            output += "%s %s %s %s" % (prefix, concept_1_short, relation, concept_2.replace("\n", ''))
+                            output += "%s %s %s %s" % (prefix, concept_1_short.replace("\n", ''), relation, concept_2.replace("\n", ''))
                         if concept_2_short not in visited_nodes:
                             visited_nodes.append(concept_2_short)
                             if path[destination] in mech_steps:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
+                            elif "[*]" in concept_2:
+                                explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                             else:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                     destination += 1
@@ -201,23 +294,35 @@ def generate_explanation(experiment_set_results):
                 prefix = " Then, "
                 path_nr += 1
         
+        if len(relevant_genes_to_tissue) > 0:
+            output += ".\n\nGenes known to be active in this tissue type are indicated with a \"[*]\""
+
         ordered_gene_list = []
         for i in range(5*time_point_index):
             ordered_gene_list = ordered_gene_list + [all_significant_genes[x].pop(0) for x in all_significant_genes.keys() if len(all_significant_genes[x]) > 0]
-        output += ".\n\nGene knockout suggestions for further experiments at this dose and time points (in order of relevance): %s\n\n" % ", ".join(ordered_gene_list)
+        if found_paths:
+            output += ".\n\nGene knockout suggestions for further experiments at this dose and time points (in order of relevance): %s" % ", ".join(ordered_gene_list)
+
+        if len(related_variants) > 0:
+           # related_variants = np.array(related_variants).flatten()
+           # related_variants = list(set(related_variants))
+            output += "\n\n\nRelated variants that could affect an individual's response to this mechanism of toxicity: %s\n\n"  % ", ".join([x for x in related_variants if len(x) > 3])
+
         print(output)
-        with open('narratives/%s_%s_explanation.txt' % (experiment_set, top_mech), 'w') as new_mech_narrative_fd:
+        with open('%s/%s_%s_explanation.txt' % (args.output_dir, experiment_set, top_mech), 'w') as new_mech_narrative_fd:
             new_mech_narrative_fd.write(output)
 
-        explanation_graph.attr(label='Mechanistic explanation for %s of %s' % (top_mech, experiment_set), engine="neato")
-        explanation_graph.render('narratives/%s_%s_explanation' % (experiment_set, top_mech), format="png")
+        if len(relevant_genes_to_tissue) > 0:
+            explanation_graph.attr(label='Mechanistic explanation for %s of %s \n (double circles indicate one or more genes are known to be active in this tissue type)' % (top_mech, experiment_set), engine="neato")
+        else:
+            explanation_graph.attr(label='Mechanistic explanation for %s of %s' % (top_mech, experiment_set), engine="neato")
+        explanation_graph.render('%s/%s_%s_explanation' % (args.output_dir, experiment_set, top_mech), format="png")
         del explanation_graph
 
         time_point_index += 1        
 
     return [gene_paths_per_step, direct_gene_paths_per_step]
         
-
 
 if __name__=='__main__':
 
@@ -240,6 +345,7 @@ if __name__=='__main__':
                     filtered_results.append(result)
             results = filtered_results
 
+#        generate_explanation(results[0])
         pool = multiprocessing.Pool(int(args.nr_threads))
         expl_results = pool.map(generate_explanation, results)
         pool.close()
