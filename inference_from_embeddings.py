@@ -7,6 +7,7 @@ import numpy as np
 import os.path
 import pandas as pd
 import random
+import re
 from scipy.spatial import distance
 from sklearn.utils import resample
 from sklearn.metrics import confusion_matrix, f1_score, classification_report, roc_curve, auc, accuracy_score
@@ -62,6 +63,16 @@ results_dump = dict()
 
 for experiment_set in exp_lib.EXPERIMENTS.keys():
     print('Processing %s experiments' % experiment_set)
+    tissue_match = re.search(r"\[([A-Za-z0-9_ |]+)\]", experiment_set)
+    tissue_type = tissue_match.group(1)
+    #tissue_df = pd.read_csv(mech_utils.TISSUE_SPECIFICITY, sep="\t", na_filter=False,
+    #                        usecols=[0, 1], names=['entrez_id', 'tissue'])
+    #if '|' in tissue_type:
+    #    tissue_types = tissue_type.split('|')
+    #    tissue_df = tissue_df[(tissue_df['tissue'].isin(tissue_types))]
+    #else:
+    #    tissue_df = tissue_df[(tissue_df['tissue'] == tissue_type)]
+    #active_genes_in_tissue = tissue_df['entrez_id'].unique()
     
     enrichment_results = dict()
     enrichment_results[experiment_set] = dict()
@@ -89,6 +100,7 @@ for experiment_set in exp_lib.EXPERIMENTS.keys():
                                     'p_value':'float'})
 
         gene_count = 0
+        #gene_weights = []
         enrichment_results[experiment_set]["%s_genes" % exp_time_point] = []
         for gene in exp_df.itertuples():
             if gene.p_value < P_VALUE_THRESHOLD:
@@ -112,6 +124,11 @@ for experiment_set in exp_lib.EXPERIMENTS.keys():
                         if gene.fold_change < 0:
                             gene_change = "Downregulated"
                         enrichment_results[experiment_set]["%s_genes" % exp_time_point].append((gene_node, gene_change))
+                        # Is this gene known to be active in the assay tissue type?
+                        #if int(entrez_id) in active_genes_in_tissue:
+                        #    gene_weights.append(2)
+                        #else:
+                        #    gene_weights.append(1)
 
                         gene_count += 1
                         if gene_count == args.max_genes:
@@ -128,6 +145,7 @@ for experiment_set in exp_lib.EXPERIMENTS.keys():
         gene_emb = np.array(gene_emb)
         # Average all gene embeddings, calculate the distance to each mechanism step
         gene_emb_avg = np.mean(gene_emb, axis=0)
+        #gene_emb_avg = np.average(gene_emb, axis=0, weights=gene_weights)
         
         results_dump[exp_time_point] = gene_emb_avg
 
@@ -145,6 +163,7 @@ for experiment_set in exp_lib.EXPERIMENTS.keys():
             enrichment_results[experiment_set][mechanism_label][exp_time_point] = enriched_mech_nodes
         print(log)
         time_point_index += 1
+    enrichment_results[experiment_set]['tissue_type'] = tissue_type
     results.append(enrichment_results)
 
 pickle.dump(results_dump, open(RESULTS_FOR_CLUSTERING, 'wb'), protocol=pickle.HIGHEST_PROTOCOL)
@@ -187,7 +206,7 @@ for result in results:
     z_scores = []
     chem_features = np.array([])
     for mechanism_label in result[experiment_set].keys():
-        if mechanism_label[-6:] != '_genes':
+        if mechanism_label[-6:] != '_genes' and mechanism_label != 'tissue_type':
             mechanism_score = np.zeros(len(mechanisms_lib.MECHANISMS[mechanism_label]))
             mech_gene_counts = dict()
             for exp_time_point in result[experiment_set][mechanism_label].keys():
