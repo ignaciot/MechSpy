@@ -64,7 +64,7 @@ def generate_explanation(experiment_set_results):
 
                 # TODO: good loop to multiprocess:
                 gene_nr = 0
-                relevant_genes_to_tissue = []
+                #relevant_genes_to_tissue = False
                 for (gene, gene_change) in list(set(experiment_set_results[experiment_set][result_key])):
                     gene_with_path = False
                     #gene = gene_orig[1:-1]
@@ -121,10 +121,10 @@ def generate_explanation(experiment_set_results):
                             pass
 
                         # Check if any of the genes involved are known to be active in the current tissue type
-                        if gene_with_path:
-                            entrez_id = int(gene.split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
-                            if entrez_id in active_genes_in_tissue:
-                                relevant_genes_to_tissue.append(gene)
+                        #if gene_with_path and not relevant_genes_to_tissue:
+                        #    entrez_id = int(gene.split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
+                        #    if entrez_id in active_genes_in_tissue:
+                        #        relevant_genes_to_tissue = True
 
                         if len(aggregated_nodes) > 1:
                             gene_paths_per_step[mech_step].append((gene_change, [gene, ';'.join(aggregated_nodes), mech_step]))
@@ -147,6 +147,7 @@ def generate_explanation(experiment_set_results):
         visited_nodes = []
         visited_edges = []
         graph_row = 0
+        relevant_genes_to_tissue = False
         for mech_step in gene_paths_per_step.keys():
             prefix = ""
             last_concept_1 = ""
@@ -167,10 +168,22 @@ def generate_explanation(experiment_set_results):
                     except IndexError as e:
                         relation = relation_concept
                     try:
+                        if 'geneid' in path[destination - 1]:
+                            next_to_last_entrez_id = int(path[destination - 1].split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
+                            relevant_genes_to_tissue = True
+                        else:
+                            next_to_last_entrez_id = 0
                         if ';' in path[destination - 1]:
                             concept_1 = ''
                             for some_node in path[destination - 1].split(';'):
-                                if some_node in relevant_genes_to_tissue:
+                                if 'geneid' in some_node:
+                                    entrez_id = int(some_node.split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
+                                    relevant_genes_to_tissue = True
+                                else:
+                                    entrez_id = 0
+
+                                if entrez_id in active_genes_in_tissue:
+                                    relevant_genes_to_tissue = True
                                     if concept_1 == '':
                                         concept_1 += " %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
                                     else:
@@ -181,8 +194,9 @@ def generate_explanation(experiment_set_results):
                                     else:
                                         concept_1 += ", %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
                             #concept_1 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination - 1].split(';')])
-                        elif path[destination - 1] in relevant_genes_to_tissue:
+                        elif next_to_last_entrez_id in active_genes_in_tissue:
                             concept_1 = "%s[*]" % labels_df[(labels_df.concept==path[destination - 1])].label.values[0]
+                            relevant_genes_to_tissue = True
                         else:
                             concept_1 = labels_df[(labels_df.concept==path[destination - 1])].label.values[0]
                     except IndexError as e:
@@ -191,7 +205,13 @@ def generate_explanation(experiment_set_results):
                         if ';' in path[destination]:
                             concept_2 = ''
                             for some_node in path[destination].split(';'):
-                                if some_node in relevant_genes_to_tissue:
+                                if 'geneid' in some_node:
+                                    entrez_id = int(some_node.split('/')[-1][:-1]) # lookup by the integer ENTREZ ID
+                                else:
+                                    entrez_id = 0
+
+                                if entrez_id in active_genes_in_tissue:
+                                    relevant_genes_to_tissue = True
                                     if concept_2 == '':
                                         concept_2 += " %s[*]" % labels_df[(labels_df.concept==some_node)].label.values[0]
                                     else:
@@ -202,8 +222,6 @@ def generate_explanation(experiment_set_results):
                                     else:
                                         concept_2 += ", %s" % labels_df[(labels_df.concept==some_node)].label.values[0]
                             #concept_2 = ', '.join([labels_df[(labels_df.concept==some_node)].label.values[0] for some_node in path[destination].split(';')])
-                        elif path[destination] in relevant_genes_to_tissue:
-                            concept_2 = "%s[*]" % labels_df[(labels_df.concept==path[destination])].label.values[0]
                         else:
                             concept_2 = labels_df[(labels_df.concept==path[destination])].label.values[0]
                     except IndexError as e:
@@ -294,7 +312,7 @@ def generate_explanation(experiment_set_results):
                 prefix = " Then, "
                 path_nr += 1
         
-        if len(relevant_genes_to_tissue) > 0:
+        if relevant_genes_to_tissue:
             output += ".\n\nGenes known to be active in this tissue type are indicated with a \"[*]\""
 
         ordered_gene_list = []
@@ -312,7 +330,7 @@ def generate_explanation(experiment_set_results):
         with open('%s/%s_%s_explanation.txt' % (args.output_dir, experiment_set, top_mech), 'w') as new_mech_narrative_fd:
             new_mech_narrative_fd.write(output)
 
-        if len(relevant_genes_to_tissue) > 0:
+        if relevant_genes_to_tissue:
             explanation_graph.attr(label='Mechanistic explanation for %s of %s \n (double circles indicate one or more genes are known to be active in this tissue type)' % (top_mech, experiment_set), engine="neato")
         else:
             explanation_graph.attr(label='Mechanistic explanation for %s of %s' % (top_mech, experiment_set), engine="neato")
