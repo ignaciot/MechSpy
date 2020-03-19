@@ -1,0 +1,80 @@
+2-3-7-8-tetrachlorodibenzodioxine	28119
+2-acetamidofluorene	17356
+4-(N-nitrosomethylamino)-1-(3-pyridyl)butan-1-one	32692
+N-Nitrosomorpholine	76326
+N-methyl-N-nitrosurea	50102
+S-(1,2-dichlorovinyl)-l-cysteine	46650
+Tris-2-3-dibromopropyl-phosphate	82282
+acetaminophen	46195
+aflatoxin B1	2504
+allopurinol	40279
+allyl alcohol	16605
+amiodarone	2663
+aristolochic acid	2825
+aspirin	15365
+azathioprine	2948
+benzbromarone	3023
+benzo[a]pyrene	29865
+benzyl alcohol	17987
+bisphenol A	33216
+bromobenzene	3179
+cadmium dichloride	35456
+carbamazepine	3387
+carbon tetrachloride	27385
+citrinin	48708
+clofibrate	3750
+clonidine	46631
+cobalt(2+) sulfate	53470
+coumarin	28794
+cyclophosphamide hydrate	4026
+cyclosporin A	4031
+diazepam	49575
+dibenz[a,h]anthracene	35299
+diclofenac sodium	4509
+doxorubicin	28748
+ethanol	16236
+fluphenazine	5123
+flutamide	5132
+fumonisin B1	38221
+gemfibrozil	5296
+glibenclamide	5441
+griseofulvin	27779
+haloperidol	5613
+hexachlorobenzene	5692
+hydroquinone	17594
+ibuprofen	5855
+imipramine	47499
+indomethacin	49662
+isoniazid	6030
+ketoconazole	47519
+lead diacetate trihydrate	33112
+lomustine	6520
+menthol	25187
+methapyrilene hydrochloride	38213
+methyltestosterone	27436
+naphthyl isothiocyanate	35455
+nitrofurantoin	71415
+omeprazole	7772
+perhexiline	35553
+phenobarbital sodium	8070
+phenylbutazone	48574
+phenytoin	8107
+piperonyl butoxide	32687
+pirinixic acid, WY-14643	32509
+potassium bromate	38211
+propylthiouracil	8502
+resorcinol	27810
+rifampicin	28077
+rotenone	28201
+sodium dichromate	39483
+sodium metaarsenite	29678
+streptozocin	9288
+styrene	27452
+sulfasalazine	9334
+tacrine	45980
+tetracycline	27902
+thioacetamide	32497
+thioridazine	9566
+tolbutamide	27999
+triclosan	164200
+valproic acid	39867
