@@ -144,6 +144,7 @@ def generate_explanation(experiment_set_results):
         explanation_graph.attr(overlap='false')
         explanation_graph.attr(overlap_scaling='-2')
         explanation_graph.attr(splines='curved')
+        explanation_graph.attr(sep='+10')
         visited_nodes = []
         visited_edges = []
         graph_row = 0
@@ -282,7 +283,7 @@ def generate_explanation(experiment_set_results):
                         if concept_2_short not in visited_nodes:
                             visited_nodes.append(concept_2_short)
                             if path[destination] in mech_steps:
-                                explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
+                                explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", shape="rectangle", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
                             elif "[*]" in concept_2:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="10,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                             else:
@@ -298,7 +299,7 @@ def generate_explanation(experiment_set_results):
                         if concept_2_short not in visited_nodes:
                             visited_nodes.append(concept_2_short)
                             if path[destination] in mech_steps:
-                                explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
+                                explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", shape="rectangle", fillcolor="#caaddb", fontname="FreeSans", fontsize="12")
                             elif "[*]" in concept_2:
                                 explanation_graph.node(concept_2_short, concept_2_short, pos="20,%s!" % graph_row, style="filled", peripheries="2", fillcolor="#f1f1f1", fontname="FreeSans", fontsize="12")
                             else:
