@@ -2,7 +2,7 @@
 
 ## Mechanistic inference for toxicology
 
-This repository provide the code for the publication "Applying knowledge-driven mechanistic inference to toxicogenomics" (DOI: xxxxxxxxxxxx) and contains the collection of scripts to reproduce the results obtained. Besides the code, this repository provides:
+This repository provide the code for the publication "Applying knowledge-driven mechanistic inference to toxicogenomics" (DOI: [https://doi.org/10.1016/j.tiv.2020.104877](https://doi.org/10.1016/j.tiv.2020.104877)) and contains the collection of scripts to reproduce the results obtained. Besides the code, this repository provides:
 
 * Vector embeddings of the knowledge graph used for the inference step, generated using node2vec.
 * Knowledge graph utilized for this study (extended from the KG created for [PheKnowLator](https://github.com/callahantiff/PheKnowLator/wiki)), exported as a NetworkX object.
@@ -88,7 +88,7 @@ If you have any questions, please (preferably) open an issue on this GitHub repo
 
 If you have used MechSpy or any of the processed data shared in this repository for your research, please cite the following article:
 
-Tripodi, I. J. et al, "Mechanistic inference from knowledge representation: a toxicogenomics case study" [UPDATE URL AND DOI]
+Tripodi, I. J. et al, "Applying knowledge-driven mechanistic inference to toxicogenomics" [https://doi.org/10.1016/j.tiv.2020.104877](https://doi.org/10.1016/j.tiv.2020.104877)
     
 
 
